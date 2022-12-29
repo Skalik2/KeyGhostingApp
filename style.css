@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  user-select: none;
+}
+:root {
+  --akaWhite: rgb(193, 192, 192);
+}
+body,
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: var(--akaWhite);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+.keyboardLeft {
+  width: 80%;
+  display: inline-block;
+}
+.keyboardRight {
+  width: 19%;
+  display: inline-block;
+}
+.main {
+  width: 750px;
+  height: 260px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: var(--akaWhite);
+}
+.btn {
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  visibility: hidden;
+}
+.btnDouble {
+  width: 50px;
+}
+.btnTriple {
+  width: 70px;
+}
+.brnRShift {
+  width: 90px;
+}
+.btnBigger {
+  width: 40px;
+}
+.btnSpace {
+  width: 275px;
+}
+.btnSpecial {
+  font-size: 13px;
+}
+
+/* Dark mode */
+.modeSwitch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modeIcon {
+  font-size: 25px;
+}
+.lightMode,
+.darkMode {
+  display: inline-block;
+  cursor: pointer;
+}
+.displayNone {
+  display: none;
+}
+
+.dark {
+  color: var(--akaWhite);
+  background-color: black;
+  border-color: var(--akaWhite);
+}
+.light {
+  color: black;
+  background-color: var(--akaWhite);
+  border-color: black;
+}
